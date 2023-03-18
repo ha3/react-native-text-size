@@ -16,6 +16,7 @@ def _minSdkVersion      = safeExtGet('minSdkVersion', 16)
 buildscript {
     repositories {
         google()
+        mavenCentral()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.4.1'
