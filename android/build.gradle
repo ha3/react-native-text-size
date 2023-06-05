@@ -8,10 +8,10 @@ def safeExtGet(prop, fallback) {
     return rootProject.ext.hasProperty(prop) ? rootProject.ext.get(prop) : fallback
 }
 
-def _buildToolsVersion  = safeExtGet('buildToolsVersion', '28.0.3')
-def _compileSdkVersion  = safeExtGet('compileSdkVersion', 28)
-def _targetSdkVersion   = safeExtGet('targetSdkVersion', 28)
-def _minSdkVersion      = safeExtGet('minSdkVersion', 16)
+def _buildToolsVersion  = safeExtGet('buildToolsVersion', '30.0.2')
+def _compileSdkVersion  = safeExtGet('compileSdkVersion', 30)
+def _targetSdkVersion   = safeExtGet('targetSdkVersion', 30)
+def _minSdkVersion      = safeExtGet('minSdkVersion', 21)
 
 buildscript {
     repositories {
@@ -19,7 +19,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.1'
+        classpath 'com.android.tools.build:gradle:3.5.3'
     }
 }
 
