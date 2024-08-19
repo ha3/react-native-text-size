@@ -9,7 +9,7 @@ import android.text.style.AbsoluteSizeSpan;
 import android.text.style.MetricAffectingSpan;
 
 import com.facebook.react.bridge.ReactApplicationContext;
-import com.facebook.react.views.text.CustomLineHeightSpan;
+import com.facebook.react.views.text.internal.span.CustomLineHeightSpan;
 import com.facebook.react.views.text.TextAttributes;
 
 import javax.annotation.Nonnull;
